@@ -1,0 +1,21 @@
+.card-container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around
+}
+
+
+.pokemon {
+    width: 14%;
+    padding: 1%;
+    border-radius: 20%;
+    margin-bottom: 2%;
+}
+
+.find {
+    color: red;
+}

@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
     <title>Poke</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">    
 </head>
 <body>
+    <header class="header">
+        <img src="/img/logo.png" alt="logo" class="header__logo">
+    </header>
+
+    <main class="content">
+        <div class="content__nav">
+            <h1 class="content__title">PokeDex</h1>
+
+
+            <div class="content__nav-filters">
+                <span class="open-filter-btn" onclick="openNav()">filter</span>
+
+                <form class="form">
+                    <input type="text" id="inputId" class="form__input"> 
+                    <input type="button" value="FIND" class="form__button" onclick="javascript: searchTextOnPage('text-to-find'); return false;"/>
+                </form>
+    
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                  </div>
+            </div>
+        </div>
         
+        <div class="card-container" id="card-container"></div> 
+
+        <button class="more-btn" id="more-btn" onclick="morePokemons()" ><p>show more pokemons</p></button>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title"> Used Pokémon API</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/filter.js"></script>
+
+
 </body>
+
+
+
 </html>

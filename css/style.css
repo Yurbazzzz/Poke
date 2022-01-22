@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+.header {
+  width: 100%;
+  background-color: #ef5350;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__logo {
+  width: 10%;
+  margin: 1% 0%;
+}
+
+.content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #263238;
+  padding: 0% 3%;
+  font-family: "Lato";
+}
+.content__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__title {
+  color: white;
+  width: 48%;
+  margin-left: 2%;
+}
+.content__nav-filters {
+  width: 30%;
+  margin-left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__input {
+  width: 80%;
+  border: #263238;
+  border-right: black 1px solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.form__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.form__button {
+  width: 20%;
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.open-filter-btn {
+  border-radius: 10px;
+  color: white;
+  padding: 1% 3%;
+  background-color: #ef5350;
+}
+
+.more-btn {
+  width: 30%;
+  margin: 0% 35%;
+  color: white;
+  border: none;
+  background-color: #263238;
+  font-size: 34px;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 ширина - изменить это с помощью JavaScript */
+  position: fixed;
+  /* Оставайтесь на месте */
+  z-index: 1;
+  /* Оставайтесь сверху */
+  top: 0;
+  /* Оставайтесь наверху */
+  right: 0;
+  background-color: #111;
+  /* Фон черный*/
+  overflow-x: hidden;
+  /* Отключить горизонтальную прокрутку */
+  padding-top: 60px;
+  /* Поместите контент в 60px сверху */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 второй эффект перехода слайда в боковой навигации */
+}
+
+/* Ссылки меню навигации */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Когда вы наводите курсор мыши на навигационные ссылки, изменяется их цвет */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Положение и стиль кнопки закрытия (верхний правый угол) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Стиль содержимого страницы - используйте это, если вы хотите сдвинуть содержимое страницы вправо при открытии боковой навигации */
+#main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.pokemon {
+  width: 14%;
+  padding: 1%;
+  border-radius: 20%;
+  margin-bottom: 2%;
+}
+
+.find {
+  color: red;
+}
+
+.footer {
+  background-color: #2f2f2f;
+}
+.footer__title {
+  color: white;
+  font-family: "Lato";
+  margin: 0%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 34px;
+  text-align: center;
+}
