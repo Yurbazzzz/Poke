@@ -33,7 +33,7 @@ const getPokemon = async id => {
 
 function createPokemonCard(pokemon) {
 	const pokemonEl = document.createElement('div');
-	pokemonEl.classList.add('pokemon');
+	pokemonEl.classList.add('pokemon');	
 
 	const poke_types = pokemon.types.map(type => type.type.name);
 	const type = main_types.find(type => poke_types.indexOf(type) > -1);
@@ -49,9 +49,10 @@ function createPokemonCard(pokemon) {
         <div class="info">
             <span class="number">#${pokemon.id.toString().padStart(3, '0')}</span>
             <h3 class="name">${name}</h3>
-            <small class="type">Type: <span>${type}</span></small>
+            <small class="type">Type: <span style='${type}'>${type}</span></small>
         </div>
     `;
+	
 
 	pokemonEl.innerHTML = pokeInnerHTML;
 
@@ -59,7 +60,6 @@ function createPokemonCard(pokemon) {
 }
 
 fetchPokemons();
-
 
 
 {/* <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png" alt="${name}" /> */}

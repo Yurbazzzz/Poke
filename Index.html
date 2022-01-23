@@ -29,14 +29,47 @@
     
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="grass()">grass</button>
+                        <button class="btn" onclick="fire()">fire</button>
+                        <button class="btn" onclick="water()">water</button>
+                        <button class="btn" onclick="electric()">electric</button>
+                        <button class="btn" onclick="ground()">ground</button>
+                        <button class="btn" onclick="rock()">rock</button>
+                        <button class="btn" onclick="fairy()">fairy</button>
+                        <button class="btn" onclick="poison()">poison</button>
+                        <button class="btn" onclick="bug()">bug</button>
+                        <button class="btn" onclick="dragon()">dragon</button>
+                        <button class="btn" onclick="psychic()">psychic</button>
+                        <button class="btn" onclick="flying()">flying</button>
+                        <button class="btn" onclick="fighting()">fighting</button>
+                        <button class="btn" onclick="normal()">normal</button>
+                      </div>
                   </div>
             </div>
         </div>
+
+        <!-- <button class="btn active"> Show all</button>
+        <button class="btn" > grass</button>
+        <button class="btn" >  fire</button>
+        <button class="btn" > water</button>
+        <button class="btn" >electric</button>
+        <button class="btn" >ground</button>
+        <button class="btn" >rock</button>
+        <button class="btn" >fairy</button>
+        <button class="btn" >poison</button>
+        <button class="btn" >bug</button>
+        <button class="btn" >dragon</button>
+        <button class="btn" >psychic</button>
+        <button class="btn" >flying</button>
+        <button class="btn" >fighting</button>
+        <button class="btn" >normal</button> -->
+ 
         
         <div class="card-container" id="card-container"></div> 
 
-        <button class="more-btn" id="more-btn" onclick="morePokemons()" ><p>show more pokemons</p></button>
+        <button class="more-btn" id="loadmore" ><p>show more pokemons</p></button>
     </main>
 
     <footer class="footer">
@@ -46,6 +79,7 @@
     <script src="/js/script.js"></script>
     <script src="/js/search.js"></script>
     <script src="/js/filter.js"></script>
+
 
 
 </body>
